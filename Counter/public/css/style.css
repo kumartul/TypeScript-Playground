@@ -59,10 +59,10 @@ body {
     
     transition: background-color 0.2s ease;
 }
-.btn-sub {
+.btn-subtract {
     background-color: #fa2f2f;
 }
-.btn-sub:hover {
+.btn-subtract:hover {
     background-color: #ff4242;
 }
 .btn-add {
