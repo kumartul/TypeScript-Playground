@@ -36,6 +36,15 @@ body {
     font-size: 100px;
     font-weight: bold;
 }
+.negative {
+    color: #fa2f2f;
+}
+.zero {
+    color: #ffc107;
+}
+.positive {
+    color: #1aa326;
+}
 
 .btn-container {
     width: 300px;
