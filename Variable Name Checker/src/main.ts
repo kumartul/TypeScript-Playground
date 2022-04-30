@@ -98,7 +98,7 @@ const validate: (input: string) => string | boolean = inputVal => {
     if (inputVal.length === 0) {
         return "Please enter a variable name";
     }
-    if (inputVal[0].match(/\W/) || inputVal.match(/\d/)) {
+    if (inputVal[0].match(/\W/) || inputVal[0].match(/\d/)) {
         return "First character must be a letter or underscore (_)";
     }
     if (inputVal.match(/\s+/)) {
