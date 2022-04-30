@@ -42,6 +42,8 @@ p {
     color: red;
     font-size: 15px;
     font-family: tahoma;
+
+    text-align: center;
 }
 
 button {
