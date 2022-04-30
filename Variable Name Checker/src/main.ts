@@ -95,16 +95,19 @@ const changeStyle: (element: HTMLInputElement, isValid: boolean | undefined) => 
 }
 
 const validate: (input: string) => string | boolean = inputVal => {
+    inputVal = inputVal.trim();
+    inputVal = inputVal[0] + inputVal.slice(1).replace(/\$/g, '');
+
     if (inputVal.length === 0) {
         return "Please enter a variable name";
     }
-    if (inputVal[0].match(/\W/) || inputVal[0].match(/\d/)) {
+    if (inputVal[0] !== '$' && (inputVal[0].match(/\W/) || inputVal[0].match(/\d/))) {
         return "First character must be a letter or underscore (_)";
     }
     if (inputVal.match(/\s+/)) {
         return "Variable name cannot contain spaces";
     }
-    if (inputVal.match(/\W+/)) {
+    if (inputVal.slice(1).match(/\W+/)) {
         return "Variable name can only contain letters, numbers, and underscores (_)";
     }
     if (search(reservedKeywords, inputVal)) {
