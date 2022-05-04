@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guess the Number</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+
+    <script src="./js/main.js" type="module"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p>
+            We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell
+            you if your
+            guess was too high or too low.
+        </p>
+
+        <div class="input">
+            <span>Enter a guess: </span><input type="number" min="1" max="99" id="guess-number"><button
+                id="submit-btn">Submit Guess</button>
+        </div>
+        <div class="previous-guesses-bar">
+            <span>Previous Guesses: </span>
+        </div>
+        <div class="status">
+            <div class="correct">
+                <span> Correct <i class="fa fa-check"></i></span>
+            </div>
+            <div class="incorrect">
+                <span> Incorrect <i class="fa fa-close"></i></span>
+            </div>
+            <div class="out-of-moves">
+                <span> Out of Moves <i class="fa fa-thumbs-down"></i></span>
+            </div>
+        </div>
+        <div class="problem">
+
+        </div>
+    </div>
+</body>
+</html>
