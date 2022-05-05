@@ -16,8 +16,6 @@ const statusBoxes: HTMLDivElement[] = [correctStatusBox, incorrectStatusBox, out
 
 const randomNum = generateRandomNum();
 
-console.log(randomNum)
-
 const hideBox: (box: HTMLDivElement) => void = box => {
     box.style.display = "none";
 }

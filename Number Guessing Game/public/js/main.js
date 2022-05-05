@@ -8,7 +8,6 @@ const incorrectStatusBox = document.querySelector('.incorrect');
 const outOfMovesStatusBox = document.querySelector('.out-of-moves');
 const statusBoxes = [correctStatusBox, incorrectStatusBox, outOfMovesStatusBox];
 const randomNum = generateRandomNum();
-console.log(randomNum);
 const hideBox = box => {
     box.style.display = "none";
 };
