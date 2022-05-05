@@ -223,3 +223,23 @@ body {
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 95%;
+        height: 50rem;
+    }
+    .problem {
+        width: 100% !important;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .input input {
+        width: 100%;
+    }
+    .input button {
+        margin-left: 0 !important;
+    }
+}
